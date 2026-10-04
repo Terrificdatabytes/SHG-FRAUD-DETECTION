@@ -1,0 +1,202 @@
+[
+  {
+    "case": "Applicant_A",
+    "truth": "clean",
+    "expected": "LOW",
+    "actual": "LOW",
+    "risk": 0.0002,
+    "ci": "0.000-0.000",
+    "betti1": 0,
+    "latency_s": 0.103,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 16.6,
+      "Hash identifiers": 3.04,
+      "Build graph overlay": 4.12,
+      "Cycle topology & features": 53.05,
+      "MLP scoring": 9.67,
+      "Explain": 3.83,
+      "Persist": 9.61
+    }
+  },
+  {
+    "case": "Applicant_B",
+    "truth": "clean",
+    "expected": "LOW",
+    "actual": "LOW",
+    "risk": 0.0021,
+    "ci": "0.000-0.007",
+    "betti1": 1,
+    "latency_s": 0.083,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 6.43,
+      "Hash identifiers": 2.41,
+      "Build graph overlay": 4.07,
+      "Cycle topology & features": 53.26,
+      "MLP scoring": 8.32,
+      "Explain": 3.87,
+      "Persist": 2.43
+    }
+  },
+  {
+    "case": "Applicant_C",
+    "truth": "clean",
+    "expected": "LOW",
+    "actual": "LOW",
+    "risk": 0.0017,
+    "ci": "0.000-0.003",
+    "betti1": 0,
+    "latency_s": 0.098,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 6.24,
+      "Hash identifiers": 2.78,
+      "Build graph overlay": 4.35,
+      "Cycle topology & features": 67.62,
+      "MLP scoring": 8.2,
+      "Explain": 4.12,
+      "Persist": 2.52
+    }
+  },
+  {
+    "case": "Applicant_D",
+    "truth": "clean",
+    "expected": "LOW",
+    "actual": "LOW",
+    "risk": 0.0014,
+    "ci": "0.000-0.004",
+    "betti1": 0,
+    "latency_s": 0.109,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 7.23,
+      "Hash identifiers": 3.6,
+      "Build graph overlay": 5.59,
+      "Cycle topology & features": 74.97,
+      "MLP scoring": 8.62,
+      "Explain": 3.78,
+      "Persist": 2.76
+    }
+  },
+  {
+    "case": "Applicant_E",
+    "truth": "fraud",
+    "expected": "HIGH",
+    "actual": "HIGH",
+    "risk": 0.9998,
+    "ci": "0.999-1.000",
+    "betti1": 1,
+    "latency_s": 0.081,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 6.16,
+      "Hash identifiers": 2.47,
+      "Build graph overlay": 4.05,
+      "Cycle topology & features": 51.6,
+      "MLP scoring": 8.14,
+      "Explain": 3.98,
+      "Persist": 2.25
+    }
+  },
+  {
+    "case": "Applicant_F",
+    "truth": "fraud",
+    "expected": "HIGH",
+    "actual": "HIGH",
+    "risk": 0.9997,
+    "ci": "0.999-1.000",
+    "betti1": 1,
+    "latency_s": 0.078,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 6.51,
+      "Hash identifiers": 2.64,
+      "Build graph overlay": 3.84,
+      "Cycle topology & features": 48.46,
+      "MLP scoring": 8.1,
+      "Explain": 3.83,
+      "Persist": 2.81
+    }
+  },
+  {
+    "case": "Applicant_G",
+    "truth": "fraud",
+    "expected": "HIGH/REVIEW",
+    "actual": "HIGH",
+    "risk": 1.0,
+    "ci": "1.000-1.000",
+    "betti1": 1,
+    "latency_s": 0.117,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 6.4,
+      "Hash identifiers": 3.13,
+      "Build graph overlay": 4.89,
+      "Cycle topology & features": 85.93,
+      "MLP scoring": 8.43,
+      "Explain": 3.63,
+      "Persist": 2.87
+    }
+  },
+  {
+    "case": "Applicant_H",
+    "truth": "fraud",
+    "expected": "REVIEW/HIGH",
+    "actual": "HIGH",
+    "risk": 1.0,
+    "ci": "1.000-1.000",
+    "betti1": 1,
+    "latency_s": 0.075,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 5.78,
+      "Hash identifiers": 2.22,
+      "Build graph overlay": 3.56,
+      "Cycle topology & features": 47.37,
+      "MLP scoring": 7.67,
+      "Explain": 3.75,
+      "Persist": 2.36
+    }
+  },
+  {
+    "case": "Applicant_I",
+    "truth": "borderline",
+    "expected": "REVIEW",
+    "actual": "REVIEW",
+    "risk": 0.0,
+    "ci": "0.000-0.000",
+    "betti1": 0,
+    "latency_s": 0.05,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 5.71,
+      "Hash identifiers": 1.46,
+      "Build graph overlay": 2.78,
+      "Cycle topology & features": 25.27,
+      "MLP scoring": 7.93,
+      "Explain": 3.41,
+      "Persist": 1.75
+    }
+  },
+  {
+    "case": "Applicant_J",
+    "truth": "clean",
+    "expected": "LOW",
+    "actual": "LOW",
+    "risk": 0.0003,
+    "ci": "0.000-0.001",
+    "betti1": 0,
+    "latency_s": 0.095,
+    "status": "PASS",
+    "timings_ms": {
+      "Validate": 6.78,
+      "Hash identifiers": 2.17,
+      "Build graph overlay": 3.46,
+      "Cycle topology & features": 52.08,
+      "MLP scoring": 10.14,
+      "Explain": 3.89,
+      "Persist": 13.99
+    }
+  }
+]

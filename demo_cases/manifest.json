@@ -1,0 +1,52 @@
+{
+  "Applicant_A": {
+    "truth": "clean",
+    "pattern": "steady",
+    "expected_verdict": "LOW"
+  },
+  "Applicant_B": {
+    "truth": "clean",
+    "pattern": "internal_cycle",
+    "expected_verdict": "LOW"
+  },
+  "Applicant_C": {
+    "truth": "clean",
+    "pattern": "seasonal",
+    "expected_verdict": "LOW"
+  },
+  "Applicant_D": {
+    "truth": "clean",
+    "pattern": "business",
+    "expected_verdict": "LOW"
+  },
+  "Applicant_E": {
+    "truth": "fraud",
+    "pattern": "classic",
+    "expected_verdict": "HIGH"
+  },
+  "Applicant_F": {
+    "truth": "fraud",
+    "pattern": "ring",
+    "expected_verdict": "HIGH"
+  },
+  "Applicant_G": {
+    "truth": "fraud",
+    "pattern": "camouflaged",
+    "expected_verdict": "HIGH/REVIEW"
+  },
+  "Applicant_H": {
+    "truth": "fraud",
+    "pattern": "multihop",
+    "expected_verdict": "REVIEW/HIGH"
+  },
+  "Applicant_I": {
+    "truth": "borderline",
+    "pattern": "borderline",
+    "expected_verdict": "REVIEW"
+  },
+  "Applicant_J": {
+    "truth": "clean",
+    "pattern": "irregular",
+    "expected_verdict": "LOW"
+  }
+}

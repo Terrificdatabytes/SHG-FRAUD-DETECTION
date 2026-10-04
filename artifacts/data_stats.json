@@ -1,0 +1,9 @@
+{
+  "shgs": 120,
+  "members": 1628,
+  "edges": 77650,
+  "fraud_members": 108,
+  "fraud_prevalence": 0.06633906633906633,
+  "benign_cycle_share": 0.20723684210526316,
+  "synthetic": true
+}

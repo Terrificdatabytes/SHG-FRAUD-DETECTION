@@ -1,0 +1,31 @@
+seed: 20261002
+paths:
+  db: data/shg.db
+  artifacts: artifacts
+model:
+  hidden_dim: 32
+  dropout: 0.30
+  mc_samples: 20
+  epochs: 80
+  learning_rate: 0.003
+  ego_cap: 150
+thresholds:
+  low: 0.35
+  high: 0.72
+domain:
+  normal_group_min: 12
+  normal_group_max: 20
+  special_group_min: 5
+  age_min: 18
+  age_max: 60
+  monthly_saving_min: 250
+  meetings_min: 2
+  meetings_max: 4
+  grading_months: 6
+  seed_money: 15000
+  cif_amount: 50000
+  cif_interest: 0.12
+  vrf_min: 5000
+  vrf_max: 15000
+  vrf_interest: 0.07
+  interest_subvention_rate: 0.07

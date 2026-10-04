@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: shg-fraud-monitor
+    runtime: python
+    plan: standard          # PyTorch + Streamlit need more than 512 MB; use "starter" only if it fits
+    buildCommand: ./render_build.sh
+    startCommand: streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.headless true --server.enableCORS false --server.enableXsrfProtection false --browser.gatherUsageStats false
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8

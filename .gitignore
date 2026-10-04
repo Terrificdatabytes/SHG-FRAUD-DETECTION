@@ -1,0 +1,4 @@
+data/.shg_salt
+__pycache__/
+.pytest_cache/
+*.log

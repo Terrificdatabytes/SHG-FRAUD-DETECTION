@@ -1,0 +1,6 @@
+{
+  "t_low": 0.9823121428489685,
+  "t_high": 0.9823121428489685,
+  "selected_on": "SHG-disjoint validation members observed through month 10",
+  "policy": "HIGH: validation precision >= 0.90; LOW boundary: validation recall >= 0.95"
+}
