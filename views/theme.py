@@ -14,8 +14,25 @@ CSS = f"""
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 html, body, [class*="css"], .stApp {{ font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif; }}
 .stApp {{ background: #F5F7FB; }}
-#MainMenu, footer, [data-testid="stToolbar"], [data-testid="stDecoration"] {{ display: none !important; }}
-header[data-testid="stHeader"] {{ background: transparent; height: 0; }}
+
+/* ---------- header / toolbar (FIXED: keep the sidebar expand button reachable) ---------- */
+#MainMenu, footer, [data-testid="stDecoration"] {{ display: none !important; }}
+header[data-testid="stHeader"] {{ background: transparent; }}
+/* hide Deploy button / menu, but keep the toolbar in the layout */
+[data-testid="stToolbar"] {{ visibility: hidden; }}
+/* ...and let the expand-sidebar button opt back in (names differ across Streamlit versions) */
+[data-testid="stToolbar"] [data-testid="stExpandSidebarButton"],
+[data-testid="stExpandSidebarButton"],
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"] {{ visibility: visible !important; display: flex !important; }}
+/* style the expand button to match the dark sidebar */
+[data-testid="stExpandSidebarButton"],
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"] {{ background: #0B1220; border-radius: 8px; margin: 8px; }}
+[data-testid="stExpandSidebarButton"] *,
+[data-testid="stSidebarCollapsedControl"] *,
+[data-testid="collapsedControl"] * {{ color: #CBD5E1 !important; }}
+
 .block-container {{ padding-top: 1.4rem; padding-bottom: 3rem; max-width: 1400px; }}
 
 /* ---------- sidebar ---------- */
